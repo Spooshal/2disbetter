@@ -1,6 +1,4 @@
 
-import ImageButton from 'react-image-button';
-
 import './App.css';
 
 import React, { useContext } from "react";

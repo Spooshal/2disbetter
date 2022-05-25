@@ -11,13 +11,6 @@ import bunny from '../slike/bunny.jpg';
 
 export class Prva extends Component {
 
-  state = {
-    ime: '',
-    prezime: '',
-    lozinka: '',
-  }
-
-
 
   render() {
 
