@@ -194,8 +194,8 @@ function Druga() {
     }
     else if (page == 7) {
       
-      return (
-       
+      return (  
+        document.getElementById("btnnn").style.display = "none",
         document.getElementById("sestopit").style.display = "none",
         document.getElementById("sedmopit").style.display = "block"
       );
@@ -220,7 +220,7 @@ function Druga() {
               
             <div id="prvopit">
               <p className="text-pitanje">
-                If you had to punch someone, who would you punch?
+                You prefer staying home over going out with friends to events
               </p>
               <div className="checklist">
                 <div>
@@ -294,8 +294,7 @@ function Druga() {
 
             <div id="drugopit">
               <p className="text-pitanje">
-                Picture a scenario: A big dinosaur is in front of you, what do
-                you do?
+                Spending time with others tires you
               </p>
               <div className="checklist">
                 <div>
@@ -369,7 +368,7 @@ function Druga() {
             </div>
 
             <div id="trecepit">
-              <p className="text-pitanje">Define life:</p>
+              <p className="text-pitanje">Seeing people in love makes you sick to the stomach</p>
               <div className="checklist">
                 <div>
                   1
@@ -442,7 +441,7 @@ function Druga() {
             </div>
 
             <div id="cetpit">
-              <p className="text-pitanje">Whos more superior?</p>
+              <p className="text-pitanje">You prefer to speak rather than stay quiet</p>
               <div className="checklist">
                 <div>
                   1
@@ -515,7 +514,7 @@ function Druga() {
             </div>
 
             <div id="petopit">
-              <p className="text-pitanje">Whos more superior?</p>
+              <p className="text-pitanje">You like making others happy</p>
               <div className="checklist">
                 <div>
                   1
@@ -616,27 +615,27 @@ const myFunction = () => {
   console.log("hello")
 
   if (counterr <= 8) {
-    let node = document.createTextNode("etooooo");
+    let node = document.createTextNode("You're a goody good that people generally like and enjoy being with");
     document.getElementById("texts").append(node);
     console.log(node);
     document.getElementById("sl1").style.display = "block";
   } else if (counterr <= 13) {
-    let node = document.createTextNode("No normal");
+    let node = document.createTextNode("You are probably a future serial killer");
     document.getElementById("texts").append(node);
     console.log(node);
     document.getElementById("sl2").style.display = "block";
-  } else if (counterr <= 18) {
-    let node = document.createTextNode("You're pretty normal.");
+  } else if (counterr <= 16) {
+    let node = document.createTextNode("You're pretty normal (boring)");
     document.getElementById("texts").append(node);
     console.log(node);
     document.getElementById("sl3").style.display = "block";
-  } else if (counterr <= 22) {
-    let node = document.createTextNode("You're pretty normal.");
+  } else if (counterr <= 20) {
+    let node = document.createTextNode("Enjoy being above others, a control freak");
     document.getElementById("texts").append(node);
     console.log(node);
     document.getElementById("sl4").style.display = "block";
   } else if (counterr <= 25) {
-    let node = document.createTextNode("You're pretty normal.");
+    let node = document.createTextNode("Dumb");
     document.getElementById("texts").append(node);
     console.log(node);
     document.getElementById("sl5").style.display = "block";

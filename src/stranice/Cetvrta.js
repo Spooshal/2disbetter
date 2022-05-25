@@ -4,17 +4,34 @@ import '../App.css';
 import Header from '../Header';
 import Footer from '../Footer';
 import File from './File';
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 function Naslovna() {
     const [data, setData] = useState([{textt: '2d girls age really well, 3d girls dont.'}]);
-
+    const [other, setOther] = useState(0);
+    const broj = 1;
     const Send = (textt) =>{
       setData([...data, {textt:textt}])
+
     }
     
+    const counter = useRef(0)
+    const [counter2, setCounter2] = useState(0);
 
-    
+    const ref = useRef();
+
+    useEffect(() => {
+      counter.current = counter.current + 1;
+      setCounter2((counter2) => counter2 + 1);
+     
+    }, [data])
+
+    useEffect(() => {
+      counter.current = 0;
+      
+    }, [])
+
+
 
   return (
     <div className="App">
@@ -43,7 +60,8 @@ function Naslovna() {
 
           
          <File send={Send}></File>
-        
+         <p>How many you have added</p>
+          <p>{counter.current}</p>
         </div>
 
         <Footer></Footer>
